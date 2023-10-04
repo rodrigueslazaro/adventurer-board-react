@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(4, 40, 4);
+    color: white;
+}
+
+.board {
+    background-color: var(--dark-brown);
+    margin: auto;
+    max-width: 320px;
+    padding: 10px;
+    border: 4px inset var(--light-brown);
+}
+
+.board-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    max-height: 450px;
+    scrollbar-width: none;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-brown);
+    width: 300px;
+    list-style: none;
+    margin-bottom: 10px;
+    border: 2px inset var(--orange);
+}
+
+.list-item input {
+    appearance: none;
+    background-color: var(--beige);
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px ridge var(--orange);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.list-item input:checked {
+    background-color: var(--orange);
+}
+
+.list-item button {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+    border: 2px inset lightgray;
+}
+
+.list-item button:hover {
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+.list-item p {
+    overflow: hidden;
+    height: 22px;
+    width: 210px;
+}
+
+.list-form {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin: auto;
+    width: 300px;
+}
+
+.list-form button {
+    appearance: none;
+    border: none;
+    background-color: var(--beige);
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+    border-right: 2px solid var(--orange);
+}
+
+.list-form input {
+    appearance: none;
+    border: none;
+    background-color: var(--beige);
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+    border-left: 2px solid var(--orange);
+}
+
+.list-form input:focus {
+    appearance: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
